@@ -122,6 +122,12 @@ void Patient::on_doIt_clicked()
                 }
             }
        }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }
@@ -157,6 +163,12 @@ void Patient::on_doIt2_clicked()
                 }
             }
        }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }
@@ -191,6 +203,17 @@ void Patient::on_doit3_clicked()
                 }
             }
        }
+       for (int i=0; i < rowCount; i++) {
+           if (!model.invisibleRootItem()->text().compare("")) {
+               model.invisibleRootItem()->removeRow(i);
+           }
+       }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }

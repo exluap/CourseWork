@@ -120,6 +120,12 @@ void Laboratory::on_doIt_clicked()
                 }
             }
        }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }
@@ -155,6 +161,12 @@ void Laboratory::on_doIt2_clicked()
                 }
             }
        }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }
@@ -189,6 +201,12 @@ void Laboratory::on_doit3_clicked()
                 }
             }
        }
+
+       for (int i=0; i < rowCount; i++) {
+                  if (!model.invisibleRootItem()->text().compare("")) {
+                      model.invisibleRootItem()->removeRow(i);
+                  }
+              }
        view.setModel(&model);
        ui->tableView->setModel(&model);
 }

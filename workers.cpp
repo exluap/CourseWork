@@ -104,9 +104,8 @@ void Workers::on_doIt_clicked()
 
        // Очистка модели
        while (model.rowCount() > 0) {
-           model.invisibleRootItem()->removeRow(0);
+           ui->tableView->model()->removeRow(0);
        }
-
        const int rowCount = json["rowCount"].toInt();
        const int columnCount = json["columnCount"].toInt();
        QJsonArray data = json["data"].toArray();
@@ -120,6 +119,13 @@ void Workers::on_doIt_clicked()
                     model.setItem(i, j, new QStandardItem(row[j].toString()));
                 }
             }
+
+       }
+
+       for (int i=0; i < rowCount; i++) {
+           if (!model.invisibleRootItem()->text().compare("")) {
+               model.invisibleRootItem()->removeRow(i);
+           }
        }
        view.setModel(&model);
        ui->tableView->setModel(&model);
