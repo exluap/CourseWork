@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Workers</class>
+ <widget class="QWidget" name="Workers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>981</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>321</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>330</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>330</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>330</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <widget class="QToolBox" name="toolBox">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>10</y>
+     <width>291</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>168</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Запрос 1</string>
+    </attribute>
+    <widget class="QLineEdit" name="quest1query">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>271</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Гинекология</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="doIt">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выполнить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Показать всех врачей из отделения</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>168</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Запрос 2</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Показать всех врачей в возрасте до</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="doIt2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выполнить</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="questquery2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>45</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <attribute name="label">
+     <string>Запрос 3</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>141</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Показать всех врачей</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="questquery3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>20</y>
+       <width>91</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Мужского</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Женского</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>141</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>пола</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="doit3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>171</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выполнить</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
